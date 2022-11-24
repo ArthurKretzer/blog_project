@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% comment %} {% block css_files %}
+    <link rel="stylesheet" href="{% static 'challenges/challenges.css' %}">
+    <link rel="stylesheet" href="{% static 'challenges/includes/header.css' %}">
+{% endblock css_files %} {% endcomment %}
+
+{% block page_title %}
+    Posts
+{% endblock page_title %}
+
+{% block content %}
+    {% include "blog/includes/header.html" %}
+    <h1>Posts</h1>
+    <span>
+        <a>Post 1</a>
+        <a>Post 2</a>
+        <a>Post 3</a>
+    </span>
+{% endblock content %}
